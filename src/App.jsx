@@ -4,6 +4,7 @@ import Home from "./pages/Home"
 import Blog from "./pages/Blog"
 import About from "./pages/About"
 import Newsletter from "./pages/Newsletter"
+import Footer from "./components/Footer"
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
         <Route path="/about" element={<About />}/>  
         <Route path="/newsletter" element={<Newsletter />}/>  
       </Routes> 
+      <Footer />
     </main>
   )
 }

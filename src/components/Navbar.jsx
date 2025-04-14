@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { assets } from "../assets/assets"
-import { Link } from "react-router";
+import { Link,  } from "react-router";
 
 const Navbar = () => {
 
@@ -21,10 +21,22 @@ const Navbar = () => {
             </div>
             <div className="hidden md:flex md:gap-4">
                 <ul className="flex items-center gap-6 mr-6">
-                    <li><Link to="/" className="font-medium text-[#4A4846] hover:text-[#34302D] hover:border-b-4 border-[#93CEFC]">Home</Link></li>
-                    <li><Link to="/blog" className="font-medium text-[#4A4846] hover:text-[#34302D] hover:border-b-4 border-[#93CEFC]">Blog</Link></li>
-                    <li><Link to="/about" className="font-medium text-[#4A4846] hover:text-[#34302D] hover:border-b-4 border-[#93CEFC]">About</Link></li>
-                    <li><Link to="/newsletter" className="font-medium text-[#4A4846] hover:text-[#34302D] hover:border-b-4 border-[#93CEFC]">Newsletter</Link></li>
+                    <li>
+                        <Link to="/" 
+                        className={"font-medium text-[#4A4846] hover:text-[#34302D] hover:border-b-4 border-[#93CEFC]"}>Home</Link>
+                    </li>
+                    <li>
+                        <Link to="/blog" 
+                        className="font-medium text-[#4A4846] hover:text-[#34302D] hover:border-b-4 border-[#93CEFC]">Blog</Link>
+                    </li>
+                    <li>
+                        <Link to="/about" 
+                        className="font-medium text-[#4A4846] hover:text-[#34302D] hover:border-b-4 border-[#93CEFC]">About</Link>
+                    </li>
+                    <li>
+                        <Link to="/newsletter" 
+                        className="font-medium text-[#4A4846] hover:text-[#34302D] hover:border-b-4 border-[#93CEFC]">Newsletter</Link>
+                    </li>
                 </ul>
             </div>
 
@@ -33,7 +45,7 @@ const Navbar = () => {
                 <div className="absolute bg-white border-[1px] border-[#EFEDEB] rounded-[10px] w-full left-0 max-w-[640px] top-[80px] p-3 md:hidden drop-shadow-xs">
                 <ul className="flex flex-col justify-center items-center gap-6">
                     <li><Link to="/" className="font-medium text-lg text-[#4A4846] hover:text-[#34302D] hover:border-b-4 border-[#93CEFC] border-b-1 border-b-[#EFEDEB]">Home</Link></li>
-                    <li><Link to="/blog" className="font-medium text-lg text-[#4A4846] hover:text-[#34302D] hover:border-b-4 border-[#93CEFC] border-b-1 border-b-[#EFEDEB]">Blog</Link></li>
+                    <li><Link to="/blog" className="font-medium text-lg text-[#4A4846] hover:text-[#635042] hover:border-b-4 border-[#93CEFC] border-b-1 border-b-[#EFEDEB]">Blog</Link></li>
                     <li><Link to="/about" className="font-medium text-lg text-[#4A4846] hover:text-[#34302D] hover:border-b-4 border-[#93CEFC] border-b-1 border-b-[#EFEDEB]">About</Link></li>
                     <li><Link to="/newsletter" className="font-medium text-lg text-[#4A4846] hover:text-[#34302D] hover:border-b-4 border-[#93CEFC] ">Newsletter</Link></li>
                 </ul>
