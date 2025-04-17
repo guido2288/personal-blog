@@ -4,7 +4,7 @@ import { assets } from '../assets/assets'
 const Footer = () => {
   return (
     <div className='flex items-center justify-between w-full max-w-[640px]'>
-        <span>Made with ❤️ and ☕️</span>
+        <span className='text-[#4A4846]'>Made with ❤️ and ☕️</span>
 
         <div className="flex gap-3 ">
           <img src={assets.logo_x} alt="logo-x" className='cursor-pointer'/>
