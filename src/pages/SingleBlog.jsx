@@ -8,11 +8,7 @@ const SingleBlog = () => {
 
   const {slug} = useParams(); 
 
-  const item = data.find( e => e.slug == slug.slice(1) )
-
-  const paragraph = item.content.split('\n\n---\n\n')
-
-  console.log(paragraph)
+  const item = data.find( e => e.slug == slug.slice(1) );
 
   return (
     <div className="pt-8 px-4 border-[1px] border-[#EFEDEB] w-full max-w-[640px]">

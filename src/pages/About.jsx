@@ -2,6 +2,9 @@ import React from 'react'
 import { assets } from '../assets/assets'
 
 const About = () => {
+
+
+
   return (
     <div className="pt-16 px-4 border-[1px] border-[#EFEDEB] w-full max-w-[640px]">
 

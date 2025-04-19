@@ -6,6 +6,8 @@ const Navbar = () => {
 
   const [menuActive, setMenuActive] = useState(false);
 
+  const [menu, setMenu] = useState("");
+
   return (
     <nav className="bg-white p-1.5 rounded-[10px] flex justify-between items-center w-full max-w-[640px] border-[1px] border-[#EFEDEB] relative drop-shadow-xs">
         <img src={assets.image_avatar} alt="avatar" className=" rounded-2xl w-10 h-10"/>
@@ -22,20 +24,29 @@ const Navbar = () => {
             <div className="hidden md:flex md:gap-4">
                 <ul className="flex items-center gap-6 mr-6">
                     <li>
-                        <Link to="/" 
-                        className={"font-medium text-[#4A4846] hover:text-[#34302D] hover:border-b-4 border-[#93CEFC]"}>Home</Link>
+                        <Link 
+                        to="/" 
+                        className={`font-medium text-[#4A4846] hover:text-[#34302D] ${menu === "" && "border-b-4"}  hover:border-b-4 border-[#93CEFC] focus:rounded-[4px] outline-[#5792C0] outline-offset-2 focus:outline-2`}
+                        onClick={ () => setMenu('') }
+                        >Home</Link>
                     </li>
                     <li>
                         <Link to="/blog" 
-                        className="font-medium text-[#4A4846] hover:text-[#34302D] hover:border-b-4 border-[#93CEFC]">Blog</Link>
+                        className={`font-medium text-[#4A4846] hover:text-[#34302D] ${menu === "blog" && "border-b-4"}  hover:border-b-4 border-[#93CEFC] focus:rounded-[4px] outline-[#5792C0] outline-offset-2 focus:outline-2`}
+                        onClick={ () => setMenu('blog') }
+                        >Blog</Link>
                     </li>
                     <li>
                         <Link to="/about" 
-                        className="font-medium text-[#4A4846] hover:text-[#34302D] hover:border-b-4 border-[#93CEFC]">About</Link>
+                        className={`font-medium text-[#4A4846] hover:text-[#34302D] ${menu === "about" && "border-b-4"}  hover:border-b-4 border-[#93CEFC] focus:rounded-[4px] outline-[#5792C0] outline-offset-2 focus:outline-2`}
+                        onClick={ () => setMenu('about') }
+                        >About</Link>
                     </li>
                     <li>
                         <Link to="/newsletter" 
-                        className="font-medium text-[#4A4846] hover:text-[#34302D] hover:border-b-4 border-[#93CEFC]">Newsletter</Link>
+                        className={`font-medium text-[#4A4846] hover:text-[#34302D] ${menu === "newsletter" && "border-b-4"}  hover:border-b-4 border-[#93CEFC] focus:rounded-[4px] outline-[#5792C0] outline-offset-2 focus:outline-2`}
+                        onClick={ () => setMenu('newsletter') }
+                        >Newsletter</Link>
                     </li>
                 </ul>
             </div>

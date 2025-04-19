@@ -17,7 +17,7 @@ const Blog = () => {
         {
           data.map( (item, idx) => (
             <div className="mb-6 border-b-[1px] border-b-[#EFEDEB]">
-              <h3><Link to={`/blog/:${item.slug}`} className=" text-[20px] mb-2 font-semibold text-[#34302D] leading-[130%] cursor-pointer hover:text-[#4A4846] hover:underline">{item.title}</Link>
+              <h3><Link to={`/blog/:${item.slug}`} className=" text-[20px] mb-2 font-semibold text-[#34302D] leading-[130%] cursor-pointer hover:text-[#4A4846] hover:underline focus:rounded-[4px] outline-[#5792C0] outline-offset-2 focus:outline-2">{item.title}</Link>
                 
               </h3>
               <span className="text-[#4A4846] text-[16px] italic">{moment(item.publishedAt).format('LL')}</span>

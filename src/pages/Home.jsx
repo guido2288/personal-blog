@@ -15,10 +15,10 @@ const Home = () => {
         <p className="mt-6 text-lg text-[#4A4846]">I started this blog to document my progress, keep myself accountable, and hopefully inspire anyone else who’s learning to code. Welcome to my corner of the internet, and thanks for stopping by!</p>
 
         <div className="mt-6 flex gap-3 mb-12">
-          <div className=" border-[1px] rounded-[10px] bg-white drop-shadow-md border-[#EFEDEB] w-10 h-10 flex flex-col justify-center p-2 cursor-pointer hover:bg-[#EFEDEB]"><img src={assets.logo_x} alt="logo-x" /></div>
-          <div className=" border-[1px] rounded-[10px] bg-white drop-shadow-md border-[#EFEDEB] w-10 h-10 flex flex-col justify-center p-2 cursor-pointer hover:bg-[#EFEDEB]"><img src={assets.logo_github} alt="logo-github" /></div>
-          <div className=" border-[1px] rounded-[10px] bg-white drop-shadow-md border-[#EFEDEB] w-10 h-10 flex flex-col justify-center p-2 cursor-pointer hover:bg-[#EFEDEB]"><img src={assets.logo_linkedin} alt="logo-linkedin" /></div>
-          <div className=" border-[1px] rounded-[10px] bg-white drop-shadow-md border-[#EFEDEB] w-10 h-10 flex flex-col justify-center p-2 cursor-pointer hover:bg-[#EFEDEB]"><img src={assets.logo_frontend_mentor} alt="logo-frontend-mentor" /></div>
+          <div className=" border-[1px] rounded-[10px] bg-white drop-shadow-md border-[#EFEDEB] w-10 h-10 flex flex-col justify-center p-2 cursor-pointer hover:bg-[#EFEDEB] focus:rounded-[4px] outline-[#5792C0] outline-offset-2 focus:outline-2"><img src={assets.logo_x} alt="logo-x" /></div>
+          <div className=" border-[1px] rounded-[10px] bg-white drop-shadow-md border-[#EFEDEB] w-10 h-10 flex flex-col justify-center p-2 cursor-pointer hover:bg-[#EFEDEB] focus:rounded-[4px] outline-[#5792C0] outline-offset-2 focus:outline-2"><img src={assets.logo_github} alt="logo-github" /></div>
+          <div className=" border-[1px] rounded-[10px] bg-white drop-shadow-md border-[#EFEDEB] w-10 h-10 flex flex-col justify-center p-2 cursor-pointer hover:bg-[#EFEDEB] focus:rounded-[4px] outline-[#5792C0] outline-offset-2 focus:outline-2"><img src={assets.logo_linkedin} alt="logo-linkedin" /></div>
+          <div className=" border-[1px] rounded-[10px] bg-white drop-shadow-md border-[#EFEDEB] w-10 h-10 flex flex-col justify-center p-2 cursor-pointer hover:bg-[#EFEDEB] focus:rounded-[4px] outline-[#5792C0] outline-offset-2 focus:outline-2"><img src={assets.logo_frontend_mentor} alt="logo-frontend-mentor" /></div>
           
           
           
@@ -34,8 +34,8 @@ const Home = () => {
           {
             items.map( e => (
               <div className="mb-6">
-                <h3 className=" text-[20px] font-semibold text-[#34302D] leading-[130%] cursor-pointer hover:text-[#4A4846] hover:underline">
-                  <Link to={`/blog/:${e.slug}`}>
+                <h3 className=" text-[20px] font-semibold text-[#34302D] leading-[130%] cursor-pointer hover:text-[#4A4846] hover:underline ">
+                  <Link to={`/blog/:${e.slug}`} className="focus:rounded-[4px] outline-[#5792C0] outline-offset-2 focus:outline-2">
                     {e.title}
                   </Link>
                 </h3>
@@ -48,7 +48,7 @@ const Home = () => {
 
           
         <p className=" text-lg font-medium text-[#34302D] border-b-4 border-[#93CEFC] w-[140px] hover:text-[#4A4846]  cursor-pointer">
-          <Link to="/blog" viewTransition>
+          <Link to="/blog" viewTransition className="focus:rounded-[4px] outline-[#5792C0] outline-offset-2 focus:outline-2">
             View all articles
           </Link>
         </p>
