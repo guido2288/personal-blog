@@ -14,8 +14,8 @@ import logo_frontend_mentor from './logo-frontend-mentor.svg';
 import logo_github from './logo-github.svg';
 import logo_linkedin from './logo-linkedin.svg';
 import logo_x from './logo-x.svg';
-// import patter_dark from './patter-dark.svg';
-// import patter_light from './patter-light.svg';
+import pattern_dark from './pattern-dark.svg';
+import pattern_light from './pattern-light.svg';
 
 export const assets = {
     icon_error,
@@ -34,6 +34,6 @@ export const assets = {
     logo_github,
     logo_linkedin,
     logo_x,
-    // patter_dark,
-    // patter_light
+    pattern_dark,
+    pattern_light
 }
