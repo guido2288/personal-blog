@@ -35,7 +35,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./src/assets/cap.png)
+![](./src/assets/Cap.png)
 
 ### Links
 
