@@ -53,3 +53,31 @@
   color: #4B4D65;
   padding: 20px;
 }
+
+#markdown .dark h2{
+  color: #FEFEFE;
+}
+
+#markdown .dark p{
+  color: #C0BFBF;
+}
+
+#markdown .dark hr{
+  color: #34302D;
+}
+
+#markdown .dark blockquote{
+  border-left: 5px solid #4A4846;
+}
+
+#markdown .dark ol li{
+  color: #C0BFBF;
+}
+
+#markdown .dark ul li{
+  color: #C0BFBF;
+}
+
+#markdown .dark pre{
+  color: #C0BFBF;
+}

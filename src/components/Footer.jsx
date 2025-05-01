@@ -3,7 +3,7 @@ import { assets } from '../assets/assets'
 
 const Footer = ({theme}) => {
   return (
-    <div className='flex items-center justify-between w-full max-w-[640px] mt-2'>
+    <div className='flex items-center justify-between w-full max-w-[620px] mt-2'>
         <span className={`${theme == 'light' ? "text-[#4A4846]" : "text-[#C0BFBF]"} `}>Made with ❤️ and ☕️</span>
 
         <div className="flex gap-3 ">

@@ -8,7 +8,7 @@ const Home = ({theme}) => {
   const items = data.slice(0,5);
 
   return (
-    <div className={`${theme == 'light' ? "border-[#EFEDEB] " : "border-[#34302D]"} pt-8 px-4 border-[1px] w-full max-w-[640px]`}>
+    <div className={`${theme == 'light' ? "border-[#EFEDEB] " : "border-[#34302D]"} pt-8 px-4 border-[1px] w-full max-w-[620px]`}>
       <div className={`my-8 border-b-[1px] ${theme == 'light' ? "border-b-[#EFEDEB]" : "border-[#34302D]"} `}>
         <h2 className={`font-extrabold text-[32px] ${theme == 'light' ? "text-[#34302D] " : "text-[#FEFEFE]"} border-b-8 border-[#93CEFC] leading-[50%] w-[260px] mb-6`}>Hi, I’m Paulina 👋</h2>
         <p className={`mt-6 text-lg ${theme == 'light' ? "text-[#4A4846]" : "text-[#C0BFBF]"} `}>I’m on a journey to become a front-end web developer. I love building little projects, trying out new coding techniques, and sharing what I learn along the way. When I’m not at my desk, you’ll find me reading, hiking through the mountains, or challenging myself on rock-climbing walls.</p>
